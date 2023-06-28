@@ -206,7 +206,7 @@ class Calculator extends React.Component {
   return (
     <div id='calculator' className='container-fluid outerBox'>
 
-      <h1 id='title' className='text-lg'>Quick Calculator Testing!</h1>
+      <h1 id='title' className='text-lg'>Quick Calculator Testing here</h1>
 
       <div id="container" className='innerBox well center'>
 
