@@ -206,7 +206,7 @@ class Calculator extends React.Component {
   return (
     <div id='calculator' className='container-fluid outerBox'>
 
-      <h1 id='title' className='text-lg'>Quick Calculator Testing here</h1>
+      <h1 id='title' className='text-lg'>Quick Calculator Maths</h1>
 
       <div id="container" className='innerBox well center'>
 
@@ -227,7 +227,7 @@ class TextDisplay extends React.Component {
     return (
           <div className='textBox'>
 
-            <textarea value={this.props.text} className='form-control' />
+            <textarea id='display' value={this.props.text} className='form-control' />
 
           </div>
     )}};
@@ -245,33 +245,33 @@ class ButtonInput extends React.Component {
 
           <div className='btn-group'>
 
-            <button id='7' onClick={() => this.props.handleNumChange('7')} className='btn btn-default btn-width'>7</button>
-            <button id='8' onClick={() => this.props.handleNumChange('8')} className='btn btn-default btn-width'>8</button>
-            <button id='9' onClick={() => this.props.handleNumChange('9')} className='btn btn-default btn-width'>9</button>
+            <button id='seven' onClick={() => this.props.handleNumChange('7')} className='btn btn-default btn-width'>7</button>
+            <button id='eight' onClick={() => this.props.handleNumChange('8')} className='btn btn-default btn-width'>8</button>
+            <button id='nine' onClick={() => this.props.handleNumChange('9')} className='btn btn-default btn-width'>9</button>
           
           </div>
 
           <div className='btn-group'>
 
-            <button id='4' onClick={() => this.props.handleNumChange('4')} className='btn btn-default btn-width'>4</button>
-            <button id='5' onClick={() => this.props.handleNumChange('5')} className='btn btn-default btn-width'>5</button>
-            <button id='6' onClick={() => this.props.handleNumChange('6')} className='btn btn-default btn-width'>6</button>
+            <button id='four' onClick={() => this.props.handleNumChange('4')} className='btn btn-default btn-width'>4</button>
+            <button id='five' onClick={() => this.props.handleNumChange('5')} className='btn btn-default btn-width'>5</button>
+            <button id='six' onClick={() => this.props.handleNumChange('6')} className='btn btn-default btn-width'>6</button>
           
           </div>
 
           <div className='btn-group'>
 
-            <button id='1' onClick={() => this.props.handleNumChange('1')} className='btn btn-default btn-width'>1</button>
-            <button id='2' onClick={() => this.props.handleNumChange('2')} className='btn btn-default btn-width'>2</button>
-            <button id='3' onClick={() => this.props.handleNumChange('3')} className='btn btn-default btn-width'>3</button>
+            <button id='one' onClick={() => this.props.handleNumChange('1')} className='btn btn-default btn-width'>1</button>
+            <button id='two' onClick={() => this.props.handleNumChange('2')} className='btn btn-default btn-width'>2</button>
+            <button id='three' onClick={() => this.props.handleNumChange('3')} className='btn btn-default btn-width'>3</button>
           
           </div>
 
           <div className='btn-group'>
 
             <button id='clear' onClick={this.props.clearPreview} className='btn btn-default btn-width'>Clear (Esc) </button>
-            <button id='0' onClick={() => this.props.handleNumChange('0')} className='btn btn-default btn-width'>0</button>
-            <button id='.' onClick={() => this.props.handleDecChange('.')} className='btn btn-default btn-width'>.</button>
+            <button id='zero' onClick={() => this.props.handleNumChange('0')} className='btn btn-default btn-width'>0</button>
+            <button id='decimal' onClick={() => this.props.handleDecChange('.')} className='btn btn-default btn-width'>.</button>
           
           </div>
 
@@ -281,10 +281,10 @@ class ButtonInput extends React.Component {
 
           <div className='btn-group btn-group-vertical'>
 
-            <button id='/' onClick={() => this.props.handleOpChange('÷', 'divide')} className='btn btn-default'>÷</button>
-            <button id='x' onClick={() => this.props.handleOpChange('x', 'multiply')} className='btn btn-default'>×</button>
-            <button id='-' onClick={() => this.props.handleOpChange('-', 'minus')} className='btn btn-default'>–</button>
-            <button id='+' onClick={() => this.props.handleOpChange('+', 'plus')} className='btn btn-default'>+</button>
+            <button id='divide' onClick={() => this.props.handleOpChange('÷', 'divide')} className='btn btn-default'>÷</button>
+            <button id='multiply' onClick={() => this.props.handleOpChange('x', 'multiply')} className='btn btn-default'>×</button>
+            <button id='subtract' onClick={() => this.props.handleOpChange('-', 'minus')} className='btn btn-default'>–</button>
+            <button id='add' onClick={() => this.props.handleOpChange('+', 'plus')} className='btn btn-default'>+</button>
         
           </div>
 
