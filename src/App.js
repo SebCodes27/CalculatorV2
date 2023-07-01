@@ -68,13 +68,14 @@ class Calculator extends React.Component {
         let textLen = this.state.text[i - 1]
         if (textLen === '0') {
           truthVal *= 0;
+        } else if (textLen === '+' || textLen === '-' || textLen === 'x' || textLen === '/' ) {
+          i = 0
         } else if (/[1-9]|./g.test(textLen) === true) {
+          console.log('hi')
           truthVal += 1;
           i = 0;
         }
-        else if (textLen === '+' || textLen === '-' || textLen === 'x' || textLen === '/' ) {
-          i = 0
-        }
+        
       }
       console.log(truthVal);
       if (truthVal === 0) {
